@@ -1,17 +1,30 @@
 name: Build Pipeline  # Workflow name
 
 on:
+Deepika-Saga-patch-1
+on:
+  workflow_dispatch:
+
+main
   pull_request:
     types:
       - closed  
 
 jobs:
   build_job:
+Deepika-Saga-patch-1
+    runs-on: ubuntu-latest  
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
     runs-on: ubuntu-latest 
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4  
+ main
 
       - name: Run Build
         run: echo "Build is done"
